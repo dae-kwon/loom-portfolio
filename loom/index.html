@@ -181,7 +181,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({
 /* ── 데이터 로드: data.json 과 결합되는 지점 ── */
 async function boot() {
   try {
-    const res = await fetch("data.json", { cache: "no-store" });
+    const res = await fetch("/loom/data.json", { cache: "no-store" });
     if (!res.ok) throw new Error("HTTP " + res.status + ": data.json 응답 오류");
     const data = await res.json();
     validate(data);
