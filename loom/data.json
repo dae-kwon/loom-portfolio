@@ -1,0 +1,2740 @@
+{
+  "meta": {
+    "eyebrow": "Dae · Portfolio Case Study · EN → KO Localization",
+    "pill": "Real-world source · Loom.com",
+    "headingMain": "Loom.com",
+    "headingSub": "Translation · Localization · Copywriting",
+    "description": "All 79 strings are real, pulled verbatim from <strong>loom.com</strong> (May 2026). Each entry shows three layers: <strong>Translation</strong> (MT baseline), <strong>Localization</strong> (culturally adapted Korean), and the copywriting logic behind every register, tone, and conversion decision. Every choice is explained in plain English and was made with conversion in mind, not just linguistic accuracy.",
+    "chips": [
+      {
+        "label": "Source:",
+        "value": "loom.com (May 2026)"
+      },
+      {
+        "label": "Disciplines:",
+        "value": "Translation · Localization · Copywriting"
+      },
+      {
+        "label": "Register:",
+        "value": "해요체"
+      },
+      {
+        "label": "Audience:",
+        "value": "Korean B2B / SMB teams"
+      },
+      {
+        "label": "Sections:",
+        "value": "14"
+      },
+      {
+        "label": "Strings:",
+        "value": "79"
+      }
+    ],
+    "copyright": "© Atlassian / Loom, Inc. · Portfolio use only · ⚠ Not official Loom copy"
+  },
+  "legend": [
+    {
+      "color": "var(--blue)",
+      "label": "Register"
+    },
+    {
+      "color": "var(--amber)",
+      "label": "Cultural"
+    },
+    {
+      "color": "var(--purple)",
+      "label": "Idiom / Metaphor"
+    },
+    {
+      "color": "var(--green)",
+      "label": "Literal (kept)"
+    },
+    {
+      "color": "var(--red)",
+      "label": "CTA / Conversion"
+    },
+    {
+      "color": "var(--teal)",
+      "label": "Added (no source)"
+    },
+    {
+      "color": "#888",
+      "label": "UI String"
+    }
+  ],
+  "sections": [
+    {
+      "id": "navigation",
+      "label": "Navigation",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-nav",
+            "text": "Nav",
+            "rowspan": 1
+          },
+          "location": "nav / cta1",
+          "original": {
+            "text": "Get Loom for free",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Loom을 무료로 받으세요",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "Loom 무료로 시작하기",
+            "rom": "Start Loom for free"
+          },
+          "explanation": {
+            "text": "받으세요 (receive) frames the CTA as a one-time download. 시작하기 (start) is the standard Korean SaaS zero-cost acquisition verb, inviting the user to begin a journey rather than collect a file.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              },
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-nav",
+            "text": "Nav",
+            "rowspan": 1
+          },
+          "location": "nav / cta2",
+          "original": {
+            "text": "Contact Sales",
+            "isNote": false
+          },
+          "direct": {
+            "text": "세일즈에 연락하기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "영업팀 문의하기",
+            "rom": "Inquire with sales team"
+          },
+          "explanation": {
+            "text": "연락하기 (contact) is too casual for Korean B2B. 문의하기 (submit an inquiry) is the standard sales CTA across Korean corporate SaaS, signaling a structured, formal response process that Korean buyers expect.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-nav",
+            "text": "Nav",
+            "rowspan": 1
+          },
+          "location": "nav / link",
+          "original": {
+            "text": "Sign In",
+            "isNote": false
+          },
+          "direct": {
+            "text": "로그인",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "로그인",
+            "rom": "Log in"
+          },
+          "explanation": {
+            "text": "로그인 is a fully naturalized loanword. MT and localization are identical. No change needed.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-nav",
+            "text": "Nav",
+            "rowspan": 1
+          },
+          "location": "nav / menu1",
+          "original": {
+            "text": "Apps",
+            "isNote": false
+          },
+          "direct": {
+            "text": "앱들",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "앱",
+            "rom": "Apps"
+          },
+          "explanation": {
+            "text": "MT adds the plural suffix 들, making 앱들. Korean nav labels don't take plural suffixes. 앱 is already understood as plural in context.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-nav",
+            "text": "Nav",
+            "rowspan": 1
+          },
+          "location": "nav / menu2",
+          "original": {
+            "text": "Solutions",
+            "isNote": false
+          },
+          "direct": {
+            "text": "솔루션들",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "솔루션",
+            "rom": "Solutions"
+          },
+          "explanation": {
+            "text": "Same plural suffix issue as 앱. 솔루션 on its own is the standard Korean B2B nav label. The 들 suffix sounds unnatural and non-native.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-nav",
+            "text": "Nav",
+            "rowspan": 1
+          },
+          "location": "nav / menu3",
+          "original": {
+            "text": "Resources",
+            "isNote": false
+          },
+          "direct": {
+            "text": "자원들",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "리소스",
+            "rom": "Resources"
+          },
+          "explanation": {
+            "text": "MT renders Resources as 자원 (natural resources / physical assets), which sounds completely wrong in a SaaS context. 리소스 is the accepted loanword used by all major Korean tech products.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-nav",
+            "text": "Nav",
+            "rowspan": 1
+          },
+          "location": "nav / menu4",
+          "original": {
+            "text": "Enterprise",
+            "isNote": false
+          },
+          "direct": {
+            "text": "엔터프라이즈",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "엔터프라이즈",
+            "rom": "Enterprise"
+          },
+          "explanation": {
+            "text": "엔터프라이즈 is kept as-is, following the same approach as Slack, Notion, and Zoom in Korea. The loanword signals a premium, business-grade tier to Korean procurement teams.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-nav",
+            "text": "Nav",
+            "rowspan": 1
+          },
+          "location": "nav / menu5",
+          "original": {
+            "text": "Pricing",
+            "isNote": false
+          },
+          "direct": {
+            "text": "가격 책정",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "가격",
+            "rom": "Pricing"
+          },
+          "explanation": {
+            "text": "MT gives 가격 책정 (price-setting), which reads like an internal business operations term. 가격 is the concise nav label used by Naver, Kakao, and all major Korean SaaS products.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero-section",
+      "label": "Hero Section",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-hero",
+            "text": "Hero",
+            "rowspan": 1
+          },
+          "location": "hero / h1",
+          "original": {
+            "text": "One video is worth a thousand words",
+            "isNote": false
+          },
+          "direct": {
+            "text": "하나의 비디오는 천 마디 말의 가치가 있습니다",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "백 마디 글보다 영상 하나",
+            "rom": "One video over a hundred words of text"
+          },
+          "explanation": {
+            "text": "MT translates the English proverb literally as 천 마디 (a thousand words), a phrase Koreans don't actually use. The localization borrows the native Korean idiom 백 마디 말보다 and sharpens it by substituting 글 (text/writing) for 말 (spoken words), directly targeting Loom's video-over-text positioning.",
+            "tags": [
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-hero",
+            "text": "Hero",
+            "rowspan": 1
+          },
+          "location": "hero / sub",
+          "original": {
+            "text": "Easily record and share AI-powered video messages with your teammates and customers to supercharge productivity",
+            "isNote": false
+          },
+          "direct": {
+            "text": "AI 기반 동영상 메시지를 팀원 및 고객과 손쉽게 녹화하고 공유하여 생산성을 크게 향상시키세요",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "AI 영상 메시지로 팀원, 고객과 더 빠르고 명확하게 소통하세요.",
+            "rom": "Communicate faster and more clearly with teammates and customers via AI video messages."
+          },
+          "explanation": {
+            "text": "MT produces a cold, clause-heavy sentence ending in 향상시키세요. The localization leads with the core product term (AI 영상 메시지) and pivots to the human outcome (더 빠르고 명확하게 소통하세요), matching Loom's warm, approachable brand voice.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-hero",
+            "text": "Hero",
+            "rowspan": 1
+          },
+          "location": "hero / cta1",
+          "original": {
+            "text": "Get Loom for free",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Loom을 무료로 받으세요",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "무료로 시작하기",
+            "rom": "Start for free"
+          },
+          "explanation": {
+            "text": "받다 (receive/get) frames the action as a transaction. The brand name is also redundant on Loom's own site. 무료로 시작하기 leads with the free offer and follows the standard Korean button-label ~하기 pattern.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-hero",
+            "text": "Hero",
+            "rowspan": 1
+          },
+          "location": "hero / cta2",
+          "original": {
+            "text": "Install Chrome Extension",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Chrome 확장 프로그램 설치하기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "Chrome 확장 프로그램 설치",
+            "rom": "Install Chrome Extension"
+          },
+          "explanation": {
+            "text": "MT incorrectly adds ~하기, treating this as a primary conversion CTA. The Korean Chrome Web Store uses the plain noun 설치 for install links. ~하기 is reserved for conversion buttons like 무료로 시작하기.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "social-proof",
+      "label": "Social Proof",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-soc",
+            "text": "Social",
+            "rowspan": 1
+          },
+          "location": "social / h2",
+          "original": {
+            "text": "Millions of people across 400,000 companies choose Loom",
+            "isNote": false
+          },
+          "direct": {
+            "text": "400,000개 회사의 수백만 명의 사람들이 Loom을 선택합니다",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "전 세계 40만 개 기업, 수백만 명이 선택한 Loom",
+            "rom": "Loom, chosen by millions across 400,000 companies worldwide"
+          },
+          "explanation": {
+            "text": "MT follows English word order: brand first, numbers last. Korean trust copy reverses this: scale numbers come first, brand closes. 선택한 (past-tense modifier) builds authority without a sales-pitch tone. 전 세계 is added as a standard trust amplifier in Korean B2B social proof headlines.",
+            "tags": [
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              },
+              {
+                "cls": "e-add",
+                "text": "Added"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-soc",
+            "text": "Social",
+            "rowspan": 1
+          },
+          "location": "social / cta",
+          "original": {
+            "text": "Get Loom for free",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Loom을 무료로 받으세요",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "무료로 시작하기",
+            "rom": "Start for free"
+          },
+          "explanation": {
+            "text": "Consistent with the hero CTA. 무료로 시작하기 is used throughout the page for conversion consistency.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "feature-ai-bug-reports-blue-section",
+      "label": "Feature. AI Bug Reports (blue section)",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-ai",
+            "text": "AI Feature",
+            "rowspan": 1
+          },
+          "location": "ai / badge",
+          "original": {
+            "text": "New!",
+            "isNote": false
+          },
+          "direct": {
+            "text": "새로운!",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "신기능",
+            "rom": "New feature"
+          },
+          "explanation": {
+            "text": "MT produces 새로운!, a floating adjective with an exclamation mark, both of which are wrong in Korean B2B UI. Adjectives need a noun to modify, and exclamation marks feel juvenile in a product context. 신기능 (new feature) is the compact badge label used by Kakao, Naver, and Toss.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-ai",
+            "text": "AI Feature",
+            "rowspan": 1
+          },
+          "location": "ai / h2",
+          "original": {
+            "text": "Ship faster with AI bug reports",
+            "isNote": false
+          },
+          "direct": {
+            "text": "AI 버그 리포트로 더 빠르게 배포하세요",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "AI 버그 리포트로 개발 속도를 높이세요",
+            "rom": "Speed up development with AI bug reports"
+          },
+          "explanation": {
+            "text": "Ship is dev slang with no direct Korean equivalent. MT defaults to 배포 (deploy), which is technically adjacent but wrong here. Shipping means accelerating development, not just pushing a release. 개발 속도를 높이세요 is the phrase Korean dev-tool marketers actually use.",
+            "tags": [
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-ai",
+            "text": "AI Feature",
+            "rowspan": 1
+          },
+          "location": "ai / body",
+          "original": {
+            "text": "Record a quick walkthrough and let Loom's AI turn it into a fully populated Jira work item in a few clicks. Loom automatically captures the technical details devs need (device/browser/OS, console errors, and network activity) to pinpoint the problem fast and move work forward.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "빠른 안내 영상을 녹화하고 Loom의 AI가 몇 번의 클릭으로 완전히 채워진 Jira 작업 항목으로 변환하게 하세요. Loom은 문제를 빠르게 파악하고 업무를 진행하기 위해 개발자에게 필요한 기술적 세부 정보(장치/브라우저/OS, 콘솔 오류 및 네트워크 활동)를 자동으로 캡처합니다.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "화면을 녹화하기만 하면 Loom AI가 Jira 작업 항목을 자동으로 채워줘요. 기기/브라우저/OS, 콘솔 오류, 네트워크 활동까지 자동 수집해 문제를 빠르게 파악할 수 있어요.",
+            "rom": "Simply record your screen and Loom AI automatically fills in the Jira work item. It auto-collects device/browser/OS, console errors, and network activity so you can pinpoint the problem fast."
+          },
+          "explanation": {
+            "text": "MT buries the AI subject in a long embedded clause (변환하게 하세요). The localization restructures as a simple conditional (화면을 녹화하기만 하면 Loom AI가 … 채워줘요), mapping user action to AI output in minimal words. 채워줘요 replaces 채워줍니다 for 해요체 register consistency.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-ai",
+            "text": "AI Feature",
+            "rowspan": 1
+          },
+          "location": "ai / cta",
+          "original": {
+            "text": "Learn more",
+            "isNote": false
+          },
+          "direct": {
+            "text": "더 알아보기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "AI 기능 바로 써보기",
+            "rom": "Try the AI feature now"
+          },
+          "explanation": {
+            "text": "더 알아보기 suits readers still exploring. Anyone reading this far already understands the feature and is ready to act. AI 기능 바로 써보기 moves them directly to trial.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "section-the-easiest-screen-recorder-you-ll-ever-use",
+      "label": "Section. The Easiest Screen Recorder You'll Ever Use",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-scr",
+            "text": "Screen",
+            "rowspan": 1
+          },
+          "location": "scr / h2",
+          "original": {
+            "text": "The easiest screen recorder you'll ever use",
+            "isNote": false
+          },
+          "direct": {
+            "text": "당신이 사용해 본 것 중 가장 쉬운 화면 녹화기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "이보다 쉬운 화면 녹화는 없어요",
+            "rom": "There is no screen recording easier than this"
+          },
+          "explanation": {
+            "text": "MT produces a verbose personal address (당신이 사용해 본 것 중) that sounds awkward. 이보다 … 없어요 is the native Korean superlative advertising pattern, punchy, natural, and widely used in Korean product marketing.",
+            "tags": [
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              },
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-scr",
+            "text": "Screen",
+            "rowspan": 1
+          },
+          "location": "scr / sub",
+          "original": {
+            "text": "Record in a few clicks. Share anywhere. Collaborate better.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "몇 번의 클릭으로 녹화하세요. 어디서나 공유하세요. 더 잘 협력하세요.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "클릭 몇 번으로 녹화하고, 공유하고, 협업하세요.",
+            "rom": "Record, share, and collaborate in just a few clicks."
+          },
+          "explanation": {
+            "text": "MT translates three English fragments as three separate Korean imperatives, which reads choppy. Merging them into one sentence with the -하고, -하고 serial structure is natural Korean rhythm and much easier to scan.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-scr",
+            "text": "Screen",
+            "rowspan": 1
+          },
+          "location": "scr / feat-h",
+          "original": {
+            "text": "Lightning fast screen recording",
+            "isNote": false
+          },
+          "direct": {
+            "text": "번개같이 빠른 화면 녹화",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "번개처럼 빠르게 녹화 시작",
+            "rom": "Start recording lightning fast"
+          },
+          "explanation": {
+            "text": "번개처럼 (like lightning) is more idiomatic than MT's 번개같이. 녹화 시작 is added as a compact action noun appropriate for a feature-card heading.",
+            "tags": [
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-scr",
+            "text": "Screen",
+            "rowspan": 1
+          },
+          "location": "scr / feat-body",
+          "original": {
+            "text": "Easily record your screen and webcam. Record on any device using Loom's Chrome extension, desktop app or mobile app.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "화면과 카메라를 쉽게 녹화하세요. Loom의 Chrome 확장 프로그램, 데스크톱 앱 또는 모바일 앱을 사용하여 모든 기기에서 녹화할 수 있습니다.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "화면과 웹캠으로 간편하게 녹화하세요. Chrome 확장 프로그램, 데스크톱 앱, 모바일 앱, 어떤 기기에서든 바로 쓸 수 있어요.",
+            "rom": "Easily record your screen and webcam. Chrome extension, desktop app, mobile app, ready on any device."
+          },
+          "explanation": {
+            "text": "MT uses 녹화할 수 있습니다 (합쇼체, passive), which sounds stiff and hedging. 바로 쓸 수 있어요 is active, zero-friction, and 해요체. 웹캠 replaces 카메라 for product-specific accuracy. Loom의 is dropped as redundant on Loom's own site.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-scr",
+            "text": "Screen",
+            "rowspan": 1
+          },
+          "location": "scr / cta",
+          "original": {
+            "text": "Download now",
+            "isNote": false
+          },
+          "direct": {
+            "text": "지금 다운로드하세요",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "지금 다운로드하기",
+            "rom": "Download now"
+          },
+          "explanation": {
+            "text": "~하세요 belongs in body copy, not button labels. Korean buttons use the ~하기 form. 지금 다운로드하기 follows that convention.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "section-so-much-more-than-a-screen-recorder",
+      "label": "Section. So Much More Than a Screen Recorder",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-more",
+            "text": "More",
+            "rowspan": 1
+          },
+          "location": "more / h2",
+          "original": {
+            "text": "So much more than a screen recorder",
+            "isNote": false
+          },
+          "direct": {
+            "text": "화면 녹화 그 이상",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "화면 녹화, 훨씬 그 이상이에요",
+            "rom": "Screen recording, and so much more than that"
+          },
+          "explanation": {
+            "text": "MT leaves the sentence without a predicate. 화면 녹화 그 이상 is grammatically incomplete. 훨씬 adds emphasis, and closing with 이에요 makes it a proper declarative statement in 해요체. Abstract nouns like 가치 (value) are avoided, as they make weak benefit claims in Korean marketing.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-more",
+            "text": "More",
+            "rowspan": 1
+          },
+          "location": "more / f1-h",
+          "original": {
+            "text": "Edit your videos like a pro",
+            "isNote": false
+          },
+          "direct": {
+            "text": "전문가처럼 비디오를 편집하세요",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "전문가 수준의 영상 편집",
+            "rom": "Professional-level video editing"
+          },
+          "explanation": {
+            "text": "MT defaults to a command form (편집하세요) and an outdated loanword (비디오). Feature grid headings in Korean SaaS use noun phrases. 전문가 수준의 영상 편집 scans cleanly and matches the pattern of the other two feature headings.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-more",
+            "text": "More",
+            "rowspan": 1
+          },
+          "location": "more / f1-body",
+          "original": {
+            "text": "Loom's intuitive editor lets you trim, stitch clips, add eye-catching backgrounds, and even enhance your message with text, arrows, and box overlays. The result? Engaging videos you can deliver fast.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Loom의 직관적인 편집기로 클립을 트리밍하고, 이어 붙이고, 시선을 끄는 배경을 추가하고, 텍스트, 화살표, 박스 오버레이로 메시지를 향상시킬 수 있습니다. 결과는? 빠르게 전달할 수 있는 매력적인 비디오입니다.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "Loom의 손쉬운 편집기로 클립 다듬기, 이어 붙이기, 배경 추가는 물론, 텍스트·화살표·박스 오버레이로 영상을 더욱 풍부하게 만들 수 있어요. 완성도 높은 영상을 빠르게 전달해 보세요.",
+            "rom": "With Loom's intuitive editor, trim and stitch clips, add backgrounds, and enrich your video with text, arrows, and overlays. Deliver polished videos fast."
+          },
+          "explanation": {
+            "text": "MT picks the dated loanword 비디오 and frames the benefit as 메시지를 향상시키다. 메시지 in Korean evokes text messaging, not video content. 영상 replaces 비디오, 풍부하게 만들다 replaces 향상시키다, and the sentence closes with 완성도 높은 영상을 빠르게 전달해 보세요 for warmth.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-more",
+            "text": "More",
+            "rowspan": 1
+          },
+          "location": "more / f1-cta",
+          "original": {
+            "text": "Record now →",
+            "isNote": false
+          },
+          "direct": {
+            "text": "지금 녹화하기 →",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "지금 편집해 보기 →",
+            "rom": "Try editing now →"
+          },
+          "explanation": {
+            "text": "The English source says 'Record now' but it's placed at the end of an editing section. MT copies that mismatch. 지금 편집해 보기 aligns the CTA with the section's actual subject.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-more",
+            "text": "More",
+            "rowspan": 1
+          },
+          "location": "more / f2-h",
+          "original": {
+            "text": "Share or embed video anywhere you work",
+            "isNote": false
+          },
+          "direct": {
+            "text": "업무하는 곳 어디서나 비디오를 공유하거나 삽입하세요",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "어디로든 영상 공유 및 퍼가기",
+            "rom": "Share and embed video anywhere"
+          },
+          "explanation": {
+            "text": "퍼가기 is used here because it more precisely captures what Loom does: dropping videos into Slack, Notion, email, and other tools. Korean users widely associate 퍼가기 with this cross-tool sharing behavior. The heading is restructured as a noun phrase to match the other two feature headings.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-more",
+            "text": "More",
+            "rowspan": 1
+          },
+          "location": "more / f2-body",
+          "original": {
+            "text": "From Google Workspace to Slack, Loom videos seamlessly integrate with hundreds of tools you use every day.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Google Workspace에서 Slack까지, Loom 비디오는 매일 사용하는 수백 가지 도구와 원활하게 통합됩니다.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "Google Workspace부터 Slack까지, 매일 쓰는 수백 가지 툴과 끊김 없이 연동돼요.",
+            "rom": "From Google Workspace to Slack, seamlessly connected to hundreds of tools you use every day."
+          },
+          "explanation": {
+            "text": "MT uses 통합됩니다 (합쇼체) and 비디오 (outdated loanword). 연동돼요 matches the 해요체 register and is the standard SaaS integration term. 툴 replaces 도구. 도구 sounds like a physical hand tool; 툴 is what the Korean tech community uses for software.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-more",
+            "text": "More",
+            "rowspan": 1
+          },
+          "location": "more / f2-cta",
+          "original": {
+            "text": "Start sharing →",
+            "isNote": false
+          },
+          "direct": {
+            "text": "공유 시작하기 →",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "공유 시작하기 →",
+            "rom": "Start sharing →"
+          },
+          "explanation": {
+            "text": "공유 시작하기 is both a literal translation and naturally idiomatic in Korean, used by Google Drive and Slack in their Korean interfaces. No adaptation needed.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-more",
+            "text": "More",
+            "rowspan": 1
+          },
+          "location": "more / f3-h",
+          "original": {
+            "text": "Engage and connect with video",
+            "isNote": false
+          },
+          "direct": {
+            "text": "비디오로 참여하고 연결하세요",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "영상으로 협업 및 소통",
+            "rom": "Collaborate and communicate via video"
+          },
+          "explanation": {
+            "text": "MT pairs two abstract verbs (참여, 연결) that carry no concrete meaning in Korean. 영상으로 협업 및 소통 converts to a noun phrase, matches the parallel structure of the other headings, and uses terms the Korean B2B audience recognizes.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-more",
+            "text": "More",
+            "rowspan": 1
+          },
+          "location": "more / f3-body",
+          "original": {
+            "text": "Easily collaborate by adding emojis, comments, tasks and CTAs to your video message. Empower remote teams to communicate better across timezones using transcripts and captions in 50+ languages.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "이모지, 댓글, 작업 및 CTA를 비디오 메시지에 추가하여 쉽게 협업하세요. 50개 이상의 언어로 된 스크립트와 자막을 사용하여 여러 시간대에 걸쳐 더 잘 소통하도록 원격 팀에게 권한을 부여하세요.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "이모지, 댓글, 할 일, CTA를 영상에 바로 추가해 손쉽게 협업할 수 있어요. 50개 이상 언어의 자동 스크립트와 자막으로 다른 나라 원격 팀과 원활하게 소통하세요.",
+            "rom": "Add emojis, comments, to-dos, and CTAs directly to your video for easy collaboration. Communicate smoothly with remote teams in other countries using auto transcripts and captions in 50+ languages."
+          },
+          "explanation": {
+            "text": "태스크 → 할 일 (everyday Korean, not a loanword). 자동 is added to 스크립트 to make Loom's auto-generation explicit. 다른 나라 원격 팀과 makes the timezone concept concrete for Korean readers.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-more",
+            "text": "More",
+            "rowspan": 1
+          },
+          "location": "more / f3-cta",
+          "original": {
+            "text": "Connect over video →",
+            "isNote": false
+          },
+          "direct": {
+            "text": "비디오로 연결하기 →",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "영상으로 소통하기 →",
+            "rom": "Connect via video →"
+          },
+          "explanation": {
+            "text": "연결하기 (connect) reads as mechanical, appropriate for network settings but not human interaction. 소통하기 is warmer and matches the section heading 영상으로 협업 및 소통.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "section-keep-your-content-safe-dark",
+      "label": "Section. Keep Your Content Safe (dark)",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-safe",
+            "text": "Security",
+            "rowspan": 1
+          },
+          "location": "sec / h2",
+          "original": {
+            "text": "Keep your content safe",
+            "isNote": false
+          },
+          "direct": {
+            "text": "당신의 콘텐츠를 안전하게 유지하세요",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "소중한 데이터, Loom이 안전하게 지켜요",
+            "rom": "Your valuable data, Loom keeps it safe"
+          },
+          "explanation": {
+            "text": "MT uses 콘텐츠 (implies only media files) and 유지하세요 (maintain, too weak for a security claim). 소중한 데이터, Loom이 안전하게 지켜요 makes Loom the explicit actor in active voice, broadens scope to 데이터, and frames protection as a genuine commitment.",
+            "tags": [
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              },
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-safe",
+            "text": "Security",
+            "rowspan": 1
+          },
+          "location": "sec / body",
+          "original": {
+            "text": "Enterprise-grade security to keep your data and your customer's data private and secure. We offer SSO, SCIM as well as custom data retention policies and privacy settings.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "귀하의 데이터와 고객 데이터를 비공개 및 안전하게 유지하기 위한 기업 수준의 보안. SSO, SCIM 및 맞춤형 데이터 보존 정책과 개인 정보 설정을 제공합니다.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "엔터프라이즈급 보안으로 고객 데이터를 안전하게 보호해요. SSO, SCIM은 물론 맞춤형 데이터 보존 정책과 개인정보 설정까지 지원해요.",
+            "rom": "Protects customer data with enterprise-grade security. Supports SSO, SCIM as well as custom data retention policies and privacy settings."
+          },
+          "explanation": {
+            "text": "기업 수준의 is a generic descriptor. 엔터프라이즈급 is the loanword that signals top-tier, compliance-ready software to Korean procurement teams. 합쇼체 verb endings (보호합니다, 지원합니다) corrected to 해요체 (보호해요, 지원해요).",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-safe",
+            "text": "Security",
+            "rowspan": 1
+          },
+          "location": "sec / cta",
+          "original": {
+            "text": "Learn more",
+            "isNote": false
+          },
+          "direct": {
+            "text": "더 알아보기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "보안 정책 자세히 보기",
+            "rom": "View security policy in detail"
+          },
+          "explanation": {
+            "text": "더 알아보기 gives no indication of what the click leads to. 보안 정책 자세히 보기 names the specific document. Korean enterprise buyers need to know a verifiable security policy exists before engaging.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "section-video-messaging-for-all-use-cases",
+      "label": "Section. Video Messaging for All Use Cases",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-uc",
+            "text": "Use Cases",
+            "rowspan": 1
+          },
+          "location": "uc / h2",
+          "original": {
+            "text": "Video messaging for all use cases",
+            "isNote": false
+          },
+          "direct": {
+            "text": "모든 사용 사례를 위한 영상 메시징",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "모든 업무에 맞는 영상 커뮤니케이션",
+            "rom": "Video communication that fits every kind of work"
+          },
+          "explanation": {
+            "text": "사용 사례 (use case) is developer/product jargon that most Korean B2B readers don't use. 업무 is the everyday Korean word for work. 커뮤니케이션 replaces 메시징, which has broader acceptance in Korean business contexts. 모든 is used over 어떤 for a more affirming, inclusive tone.",
+            "tags": [
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              },
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-uc",
+            "text": "Use Cases",
+            "rowspan": 2
+          },
+          "location": "uc / card1-h",
+          "original": {
+            "text": "Sales",
+            "isNote": false
+          },
+          "direct": {
+            "text": "영업",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "영업",
+            "rom": null
+          },
+          "explanation": {
+            "text": "영업 is a direct, accurate equivalent. Adding 팀 would make it read as a department name rather than a product category label. Standalone 영업 is how Korean B2B SaaS products label solution areas.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": null,
+          "location": "uc / card1-body",
+          "original": {
+            "text": "Personalize your pitch with video outreach to close more deals.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "동영상 아웃리치로 피치를 개인화하여 더 많은 거래를 성사시키세요.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "고객에게 딱 맞는 동영상으로 제안하고, 더 많은 계약을 이끌어내세요.",
+            "rom": null
+          },
+          "explanation": {
+            "text": "피치 is VC/startup jargon that doesn't resonate in mainstream Korean B2B sales. 제안 is the universal Korean term for a sales pitch. 고객에게 딱 맞는 unpacks Personalize naturally. 이끌어내세요 emphasizes winning outcomes rather than just closing deals.",
+            "tags": [
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              },
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-uc",
+            "text": "Use Cases",
+            "rowspan": 2
+          },
+          "location": "uc / card2-h",
+          "original": {
+            "text": "Engineering",
+            "isNote": false
+          },
+          "direct": {
+            "text": "엔지니어링",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "개발",
+            "rom": null
+          },
+          "explanation": {
+            "text": "엔지니어링 in Korean primarily evokes physical or mechanical engineering. 개발 is the standard term for software development teams in Korean B2B SaaS.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": null,
+          "location": "uc / card2-body",
+          "original": {
+            "text": "Add visual context to your code to accelerate your sprints.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "스프린트를 가속화하기 위해 코드에 시각적 맥락을 추가하세요.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "코드를 한눈에 파악하고, 개발 속도를 한층 높이세요.",
+            "rom": null
+          },
+          "explanation": {
+            "text": "MT describes a process (시각적 맥락 추가). The localization reframes as a result: 코드를 한눈에 파악하고, an idiomatic Korean phrase for visual comprehension used in dev-tool marketing. 개발 속도 replaces 스프린트, which is too developer-specific for a mixed audience.",
+            "tags": [
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              },
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-uc",
+            "text": "Use Cases",
+            "rowspan": 2
+          },
+          "location": "uc / card3-h",
+          "original": {
+            "text": "Customer support",
+            "isNote": false
+          },
+          "direct": {
+            "text": "고객 지원",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "고객 지원",
+            "rom": null
+          },
+          "explanation": {
+            "text": "고객 지원 is the direct, standard equivalent used across all Korean B2B SaaS products. No adaptation needed.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": null,
+          "location": "uc / card3-body",
+          "original": {
+            "text": "Troubleshoot over video to reach resolutions faster.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "더 빠르게 해결에 도달하기 위해 비디오로 문제를 해결하세요.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "영상 하나로 응대 시간을 줄이고 고객 만족을 높이세요.",
+            "rom": null
+          },
+          "explanation": {
+            "text": "해결에 도달하다 (reach a resolution) is awkward in Korean. 응대 시간을 줄이고 고객 만족을 높이세요 uses KPI language that Korean CS managers and budget decision-makers recognize, making it more purchase-relevant.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-uc",
+            "text": "Use Cases",
+            "rowspan": 2
+          },
+          "location": "uc / card4-h",
+          "original": {
+            "text": "Design",
+            "isNote": false
+          },
+          "direct": {
+            "text": "디자인",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "디자인",
+            "rom": null
+          },
+          "explanation": {
+            "text": "디자인 is a fully naturalized loanword, identical in MT and localization. It works as both a job function and a product category label.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              }
+            ]
+          }
+        },
+        {
+          "badge": null,
+          "location": "uc / card4-body",
+          "original": {
+            "text": "Share ideas and provide feedback over video to enhance designs.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "디자인을 향상시키기 위해 비디오로 아이디어를 공유하고 피드백을 제공하세요.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "영상 피드백으로 아이디어를 나누고 디자인 완성도를 높이세요.",
+            "rom": null
+          },
+          "explanation": {
+            "text": "Three actions (share, provide, enhance) compressed to two. 영상 피드백 is front-loaded as the method. 디자인 완성도 (completion quality) implies a finished, deliverable-ready standard, stronger than 품질 (quality) in creative-team contexts.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-uc",
+            "text": "Use Cases",
+            "rowspan": 1
+          },
+          "location": "uc / cta",
+          "original": {
+            "text": "See all use cases",
+            "isNote": false
+          },
+          "direct": {
+            "text": "모든 사용 사례 보기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "모든 활용 사례 보기",
+            "rom": "See all use scenarios"
+          },
+          "explanation": {
+            "text": "사용 사례 → 활용 사례. 활용 (applied use) sounds more natural in marketing copy than 사용 (plain/transactional use). Minor change, consistent with the section heading.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "section-powerful-features-for-easy-custom-recordings",
+      "label": "Section. Powerful Features for Easy, Custom Recordings",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-feat",
+            "text": "Features",
+            "rowspan": 1
+          },
+          "location": "feat / h2",
+          "original": {
+            "text": "Powerful features for easy, custom recordings",
+            "isNote": false
+          },
+          "direct": {
+            "text": "쉽고 맞춤화된 녹화를 위한 강력한 기능들",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "하나로 끝나는 올인원 녹화 도구",
+            "rom": "The all-in-one recording tool that does it all"
+          },
+          "explanation": {
+            "text": "MT stacks modifiers before the key noun, burying the main message at the end. The localization front-loads the category label 올인원 녹화 도구 and uses the ~는 + noun H2 pattern that Korean SaaS headings use for positioning statements.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-feat",
+            "text": "Features",
+            "rowspan": 1
+          },
+          "location": "feat / list",
+          "original": {
+            "text": "Screen and camera recording · Trim and stitch video clips · Transcriptions and closed captions · Custom background · Easy sharing and embedding · Download and upload · Video privacy controls · Video and viewer insights",
+            "isNote": false
+          },
+          "direct": {
+            "text": "화면 및 카메라 녹화 · 비디오 클립 트리밍 및 스티칭 · 전사 및 자막 · 사용자 정의 배경 · 간편한 공유 및 삽입 · 다운로드 및 업로드 · 비디오 개인 정보 보호 · 비디오 및 시청자 인사이트",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "화면 및 웹캠 녹화 · 클립 다듬기 및 이어 붙이기 · 자동 자막 및 스크립트 · 맞춤 배경 · 간편 공유 및 퍼가기 · 다운로드 및 업로드 · 영상 공개 범위 설정 · 영상 및 시청자 인사이트",
+            "rom": null
+          },
+          "explanation": {
+            "text": "비디오 → 영상 (shorter, more natural in modern Korean). 전사 → 자동 자막 및 스크립트 (clearer to non-technical users). 삽입 → 퍼가기 (matches the heading at f2-h and captures the actual sharing behavior). 개인 정보 보호 → 영상 공개 범위 설정 (how Korean users actually think about video privacy controls).",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-feat",
+            "text": "Features",
+            "rowspan": 1
+          },
+          "location": "feat / cta",
+          "original": {
+            "text": "See all features",
+            "isNote": false
+          },
+          "direct": {
+            "text": "모든 기능들 보기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "전체 기능 보기",
+            "rom": "View all features"
+          },
+          "explanation": {
+            "text": "전체 기능 (entire feature set) is more natural than 모든 기능. 전체 implies completeness, 모든 implies enumeration. 기능들 plural suffix dropped, unnecessary in Korean.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "section-how-to-use-async-video-messaging-blue-from-our-blog",
+      "label": "Section. How to Use Async Video Messaging (blue, From Our Blog)",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-async",
+            "text": "Blog",
+            "rowspan": 1
+          },
+          "location": "blog / label",
+          "original": {
+            "text": "FROM OUR BLOG",
+            "isNote": false
+          },
+          "direct": {
+            "text": "우리 블로그에서",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "블로그 추천 글",
+            "rom": "Blog featured posts"
+          },
+          "explanation": {
+            "text": "FROM OUR BLOG is an English editorial convention. 블로그 추천 글 is how Korean content sections are labeled. 추천 글 implies editorial curation, adding perceived value.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-async",
+            "text": "Blog",
+            "rowspan": 1
+          },
+          "location": "blog / h2",
+          "original": {
+            "text": "How to use async video messaging to improve communication",
+            "isNote": false
+          },
+          "direct": {
+            "text": "커뮤니케이션을 향상시키기 위한 비동기 비디오 메시징 사용 방법",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "영상 메시지로 바꾸는 팀 소통",
+            "rom": "Team communication, transformed by video messaging"
+          },
+          "explanation": {
+            "text": "MT produces a long how-to title that reads like documentation. 비동기 (asynchronous) is technical jargon unfamiliar to general Korean B2B readers. 바꾸는 팀 소통 uses the ~는 + noun heading pattern to name a transformation, not a tutorial.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-async",
+            "text": "Blog",
+            "rowspan": 1
+          },
+          "location": "blog / a1-h",
+          "original": {
+            "text": "When to Choose Synchronous Vs. Asynchronous Communication",
+            "isNote": false
+          },
+          "direct": {
+            "text": "동기식 대 비동기식 커뮤니케이션 선택 시기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "실시간 대화 vs 영상 메시지, 언제 어떤 방식을 쓸까?",
+            "rom": "Live conversation vs video message: when to use which?"
+          },
+          "explanation": {
+            "text": "비동기식 / 동기식 are technical terms Korean general audiences don't use in conversation. 실시간 대화 and 영상 메시지 replace them with terms readers already know. The ~쓸까? question ending is the standard format for Korean tech blog article titles.",
+            "tags": [
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-async",
+            "text": "Blog",
+            "rowspan": 1
+          },
+          "location": "blog / a1-body",
+          "original": {
+            "text": "This guide explores the intricacies of sync vs. async communication, helps you decide which is the best for your workflow, and introduces how screen recording like Loom bridges the gap between these communication styles.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "이 가이드는 동기 대 비동기 커뮤니케이션의 복잡성을 탐구하고, 워크플로우에 가장 적합한 것을 결정하는 데 도움을 주며, Loom과 같은 화면 녹화가 이러한 커뮤니케이션 스타일들 사이의 간격을 어떻게 해소하는지 소개합니다.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "실시간 소통과 영상 메시지의 차이를 알아보고, 업무 상황에 맞는 방식을 선택하는 법을 안내합니다. Loom 같은 화면 녹화가 두 방식을 어떻게 연결하는지도 소개해요.",
+            "rom": "Learn the differences between live communication and video messaging, and how to choose the right approach for your workflow. Discover how screen recording like Loom bridges the two."
+          },
+          "explanation": {
+            "text": "비동기/동기 replaced throughout with 영상 메시지/실시간 소통 for document-wide terminology consistency. MT's three-clause structure is simplified into two cleaner sentences. Stacked subordinate clauses are grammatically fine but fatiguing in Korean.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-async",
+            "text": "Blog",
+            "rowspan": 1
+          },
+          "location": "blog / a1-cta",
+          "original": {
+            "text": "Read the article →",
+            "isNote": false
+          },
+          "direct": {
+            "text": "기사 읽기 →",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "글 읽기 →",
+            "rom": "Read the post →"
+          },
+          "explanation": {
+            "text": "MT gives 기사 읽기. 기사 (newspaper article) carries a print media feel. 글 (post/written piece) is shorter, more colloquial, and the standard CTA label on Korean tech blog cards like Toss Tech, Kakao Tech, and LINE Engineering Blog.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-async",
+            "text": "Blog",
+            "rowspan": 1
+          },
+          "location": "blog / a2-h",
+          "original": {
+            "text": "Let Loom AI Do the Work: Say Goodbye to Manual Documentation",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Loom AI가 작업을 수행하게 하세요: 수동 문서화에 작별을 고하세요",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "Loom AI가 해주는 문서 작업, 수동 정리는 이제 그만",
+            "rom": "Documentation handled by Loom AI: no more manual organizing"
+          },
+          "explanation": {
+            "text": "MT keeps the English A: B colon structure and uses 작별을 고하다 (bid farewell), overly formal for a blog headline. 이제 그만 is the natural Korean dismissal phrase. Loom AI가 해주는 문서 작업 makes the 'AI handles it' angle immediately clear, which ~하게 하세요 obscures.",
+            "tags": [
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              },
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-async",
+            "text": "Blog",
+            "rowspan": 1
+          },
+          "location": "blog / a2-body",
+          "original": {
+            "text": "With new Loom AI workflows, you turn any Loom into a written doc to draft SOPs, file Jira tickets, and more.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "새로운 Loom AI 워크플로우를 통해 SOP 초안 작성, Jira 티켓 제출 등을 위한 서면 문서로 모든 Loom을 전환할 수 있습니다.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "새로워진 Loom AI 워크플로우로 녹화 영상을 문서로 자동 변환합니다. SOP 초안 작성, Jira 티켓 등록 등 반복 작업을 줄여보세요.",
+            "rom": "With the updated Loom AI workflows, automatically convert recordings into documents. Reduce repetitive tasks like drafting SOPs and filing Jira tickets."
+          },
+          "explanation": {
+            "text": "새로운 → 새로워진: 새로운 implies a first launch; 새로워진 signals an upgrade to an existing feature, which is the correct source context. 자동 변환합니다 removes the awkward 모든 Loom을 subject. The second sentence reframes the feature list as an action-oriented benefit.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-async",
+            "text": "Blog",
+            "rowspan": 1
+          },
+          "location": "blog / a2-cta",
+          "original": {
+            "text": "Read the article →",
+            "isNote": false
+          },
+          "direct": {
+            "text": "기사 읽기 →",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "글 읽기 →",
+            "rom": "Read the post →"
+          },
+          "explanation": {
+            "text": "Consistent with a1-cta. 글 읽기 → is used on both blog cards for UI label consistency.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-async",
+            "text": "Blog",
+            "rowspan": 1
+          },
+          "location": "blog / cta",
+          "original": {
+            "text": "Explore our blog",
+            "isNote": false
+          },
+          "direct": {
+            "text": "블로그 탐색하기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "블로그 더 보기",
+            "rom": "See more on our blog"
+          },
+          "explanation": {
+            "text": "탐색하기 (explore/browse) has a wandering connotation in Korean. 더 보기 (see more) is the standard Korean UX pattern for loading additional content, familiar, low-friction, and immediately clear.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "section-loom-for-enterprise-dark",
+      "label": "Section. Loom for Enterprise (dark)",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-ent",
+            "text": "Enterprise",
+            "rowspan": 1
+          },
+          "location": "ent / h2",
+          "original": {
+            "text": "Loom for Enterprise",
+            "isNote": false
+          },
+          "direct": {
+            "text": "기업을 위한 Loom",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "Loom 엔터프라이즈",
+            "rom": "Loom Enterprise"
+          },
+          "explanation": {
+            "text": "기업용 Loom reads as a generic product tier. 엔터프라이즈 carries premium, security-grade, compliance-ready connotations in Korean B2B, consistent with how Slack, Notion, and Zoom label their top tiers in Korea.",
+            "tags": [
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-ent",
+            "text": "Enterprise",
+            "rowspan": 1
+          },
+          "location": "ent / sub",
+          "original": {
+            "text": "Loom for Enterprise helps teams securely manage and organize async video communication at scale",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Loom for Enterprise는 팀이 규모에 맞게 비동기 영상 커뮤니케이션을 안전하게 관리하고 구성하는 데 도움을 줍니다",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "대규모 조직 영상 커뮤니케이션, Loom 엔터프라이즈로 안전하고 체계적으로 관리하세요.",
+            "rom": "Large-scale enterprise video communication, managed securely and systematically with Loom Enterprise."
+          },
+          "explanation": {
+            "text": "MT stacks 6 particles, making the sentence grammatically correct but slow and dense. The localization front-loads the topic (대규모 조직 영상 커뮤니케이션), cuts to 3 particles, and closes with a direct imperative. 비동기 is replaced with the accessible 영상 커뮤니케이션.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-ent",
+            "text": "Enterprise",
+            "rowspan": 1
+          },
+          "location": "ent / cta",
+          "original": {
+            "text": "Learn more",
+            "isNote": false
+          },
+          "direct": {
+            "text": "더 알아보기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "도입 문의하기",
+            "rom": "Inquire about adoption"
+          },
+          "explanation": {
+            "text": "더 알아보기 is too passive for an enterprise CTA. Korean corporate buyers expect a formal inquiry channel. 도입 문의하기 is the standard procurement-intent CTA used by Kakao Enterprise, NHN, and Samsung SDS, signaling that a structured sales process is available.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "testimonial",
+      "label": "Testimonial",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-testi",
+            "text": "Testimonial",
+            "rowspan": 1
+          },
+          "location": "testi / quote",
+          "original": {
+            "text": "\"'Loom has been the light of my life since you showed me it.' – I never tire of hearing this from folks. Not even an investor... yet.\"",
+            "isNote": false
+          },
+          "direct": {
+            "text": "\"'당신이 보여준 이후로 Loom은 내 삶의 빛이었습니다.', 저는 사람들로부터 이것을 듣는 것에 결코 지치지 않습니다. 투자자조차도... 아직은요.\"",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "\"Loom을 소개하고 다니면서 '이제 이거 없이는 일 못 해요'라는 말을 듣는데, 이런 말은 백번 들어도 좋네요. 저는 투자자도 아닌데 말이에요.\"",
+            "rom": "\"Going around introducing Loom, I hear 'I literally can't work without this now', and honestly, I could hear it a hundred times and never get tired of it. And I'm not even an investor.\""
+          },
+          "explanation": {
+            "text": "삶의 빛 (light of my life) reads like a love song in Korean. 구세주 (savior) carries religious connotations that can alienate conservative enterprise buyers. 이제 이거 없이는 일 못 해요 is the natural Korean hyperbole for indispensability. 저는 투자자도 아닌데 말이에요 preserves the dry humor of the original.",
+            "tags": [
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-testi",
+            "text": "Testimonial",
+            "rowspan": 1
+          },
+          "location": "testi / attr",
+          "original": {
+            "text": "Alexis Ohanian, Founder, SevenSevenSix",
+            "isNote": false
+          },
+          "direct": {
+            "text": "알렉시스 오하니안, 창립자, SevenSevenSix",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "Alexis Ohanian · SevenSevenSix 설립자",
+            "rom": "Alexis Ohanian · Founder, SevenSevenSix"
+          },
+          "explanation": {
+            "text": "Name kept in Roman script. Alexis Ohanian is widely known in Korean startup and VC circles, and Korean publications consistently use the Roman spelling. Attribution reformatted with ·, the standard Korean testimonial convention (Name · Role/Company).",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "label": "Footer",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / h",
+          "original": {
+            "text": "Loom powers great campaigns.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Loom은 훌륭한 캠페인을 지원합니다.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "잘 되는 프로젝트엔 Loom이 있어요.",
+            "rom": "Behind every successful project, there's Loom."
+          },
+          "explanation": {
+            "text": "MT produces a flat, functional statement. 잘 되는 X엔 Y가 있다 is a Korean advertising pattern that implies causation without overstating it: 'behind every success, there's Y.' 있어요 replaces 있습니다 for 해요체 register consistency.",
+            "tags": [
+              {
+                "cls": "e-idi",
+                "text": "Idiom"
+              },
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / cta",
+          "original": {
+            "text": "Get Loom for free",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Loom을 무료로 받으세요",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "무료로 시작하기",
+            "rom": "Start for free"
+          },
+          "explanation": {
+            "text": "Consistent with hero and social proof CTAs. 무료로 시작하기 is used throughout for conversion consistency.",
+            "tags": [
+              {
+                "cls": "e-cta",
+                "text": "CTA"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / sub",
+          "original": {
+            "text": "For Mac, Windows, iOS, and Android",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Mac, Windows, iOS, Android용",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "Mac, Windows, iOS, Android 지원",
+            "rom": "Supports Mac, Windows, iOS, Android"
+          },
+          "explanation": {
+            "text": "지원 (support/compatibility) is the standard Korean term for platform coverage. 용 (exclusive to) implies the product is bundled or restricted, which is the wrong connotation for a cross-platform app.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / legal",
+          "original": {
+            "text": "Loom Terms & Policies · © 2026, Loom, Inc. All Rights Reserved.",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Loom 이용약관 및 정책 · © 2026, Loom, Inc. 모든 권리 보유.",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "Loom 이용약관 및 정책 · © 2026 Loom, Inc. All Rights Reserved.",
+            "rom": null
+          },
+          "explanation": {
+            "text": "이용약관 및 정책 is the standard Korean legal footer phrasing. All Rights Reserved is kept in English, an international copyright convention that Korean companies routinely retain in their legal footers.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "footer-navigation-all-columns",
+      "label": "Footer Navigation. All Columns",
+      "rows": [
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / col1-hd",
+          "original": {
+            "text": "APP",
+            "isNote": false
+          },
+          "direct": {
+            "text": "앱",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "앱",
+            "rom": null
+          },
+          "explanation": {
+            "text": "English all-caps convention dropped. Korean footer headers use standard casing. 앱 is a direct, accurate equivalent.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / col1",
+          "original": {
+            "text": "Pricing · loomSDK · Screen Recorder · Screenshot · Chrome Screen Recorder · Mac Screen Recorder · Windows Screen Recorder · iPhone Screen Recorder · Android Screen Recorder",
+            "isNote": false
+          },
+          "direct": {
+            "text": "요금 책정 · loomSDK · 화면 녹화기 · 스크린샷 · Chrome 화면 녹화기 · Mac 화면 녹화기 · Windows 화면 녹화기 · iPhone 화면 녹화기 · Android 화면 녹화기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "가격 · loomSDK · 화면 녹화 · 스크린샷 · Chrome 화면 녹화 · Mac 화면 녹화 · Windows 화면 녹화 · iPhone 화면 녹화 · Android 화면 녹화",
+            "rom": null
+          },
+          "explanation": {
+            "text": "Pricing → 가격 for consistency with the nav menu. 화면 녹화기 → 화면 녹화 throughout: once a platform prefix (Chrome, Mac, Windows, etc.) is present, the 기 (device/machine) suffix is redundant.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / col2-hd",
+          "original": {
+            "text": "SOLUTIONS",
+            "isNote": false
+          },
+          "direct": {
+            "text": "솔루션들",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "솔루션",
+            "rom": null
+          },
+          "explanation": {
+            "text": "솔루션 is standard in Korean B2B SaaS footer navigation. 들 plural suffix dropped, unnecessary as a column header. Native Korean 해결책 would read as a mistranslation in this context.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / col2",
+          "original": {
+            "text": "Sales · Engineering · Design · Marketing · Product Management · Support · Presentation · Team Alignment · Education · Webcam Recorder",
+            "isNote": false
+          },
+          "direct": {
+            "text": "영업 · 엔지니어링 · 디자인 · 마케팅 · 제품 관리 · 지원 · 프레젠테이션 · 팀 정렬 · 교육 · 웹캠 녹화기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "영업 · 개발 · 디자인 · 마케팅 · 제품 관리 · 고객 지원 · 프레젠테이션 · 팀 조율 · 교육 · 웹캠 녹화",
+            "rom": null
+          },
+          "explanation": {
+            "text": "Engineering → 개발 (consistent with use case card). Support → 고객 지원 (standard Korean B2B customer service term). Team Alignment → 팀 조율 (조율 captures coordination more precisely than 얼라인먼트 or 정렬). Webcam Recorder → 웹캠 녹화 (기 suffix removed, consistent with 화면 녹화 pattern).",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / col3-hd",
+          "original": {
+            "text": "FOR BUSINESS",
+            "isNote": false
+          },
+          "direct": {
+            "text": "비즈니스를 위한",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "비즈니스",
+            "rom": null
+          },
+          "explanation": {
+            "text": "비즈니스를 위한 is overly literal and reads as a catalogue phrase. Standalone 비즈니스 is cleaner and is the accepted Korean B2B footer column label.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-reg",
+                "text": "Register"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / col3",
+          "original": {
+            "text": "Loom AI · Enterprise · Loom HQ · Customer Stories · Security · Video Hosting · Video Library",
+            "isNote": false
+          },
+          "direct": {
+            "text": "Loom AI · 엔터프라이즈 · Loom 본사 · 고객 사례 · 보안 · 동영상 호스팅 · 동영상 라이브러리",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "Loom AI · 엔터프라이즈 · Loom HQ · 고객 사례 · 보안 · 영상 호스팅 · 영상 라이브러리",
+            "rom": null
+          },
+          "explanation": {
+            "text": "Loom HQ kept as-is: it is a named destination, not a descriptive label. Loom 본사 (headquarters) would be a mistranslation of intent. 동영상 → 영상 (shorter, consistent with document-wide terminology). Customer Stories → 고객 사례, the standard Korean B2B case study label.",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / col4-hd",
+          "original": {
+            "text": "DOWNLOADS",
+            "isNote": false
+          },
+          "direct": {
+            "text": "다운로드들",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "다운로드",
+            "rom": null
+          },
+          "explanation": {
+            "text": "다운로드 is a fully naturalized loanword. 들 plural suffix dropped. Korean column headers don't use plural endings.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / col4",
+          "original": {
+            "text": "Desktop App · Chrome Extension · Mobile Apps",
+            "isNote": false
+          },
+          "direct": {
+            "text": "데스크톱 앱 · Chrome 확장 프로그램 · 모바일 앱들",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "데스크톱 앱 · Chrome 확장 프로그램 · 모바일 앱",
+            "rom": null
+          },
+          "explanation": {
+            "text": "All three are standard loanword compounds used in Korean app store contexts. 앱들 plural suffix dropped. No further adaptation needed.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / col5-hd",
+          "original": {
+            "text": "RESOURCES",
+            "isNote": false
+          },
+          "direct": {
+            "text": "자원들",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "리소스",
+            "rom": null
+          },
+          "explanation": {
+            "text": "MT renders this as 자원들 (natural resources, plural), completely wrong in a SaaS context. 리소스 is the standard Korean SaaS footer label, consistent with the nav menu.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / col5",
+          "original": {
+            "text": "The Replay | Loom's Blog · Help Center · Community · eBooks · Status · What's New · Webcam Mic Test · Webcam Recorder",
+            "isNote": false
+          },
+          "direct": {
+            "text": "The Replay | Loom 블로그 · 도움 센터 · 커뮤니티 · 전자책 · 상태 · 새 소식 · 웹캠 마이크 테스트 · 웹캠 녹화기",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "The Replay | Loom 블로그 · 고객센터 · 커뮤니티 · eBooks · 서비스 상태 · 새 소식 · 웹캠 마이크 테스트 · 웹캠 녹화",
+            "rom": null
+          },
+          "explanation": {
+            "text": "Branded title The Replay | Loom 블로그 kept as-is. Help Center → 고객센터 (not 도움 센터, as 고객센터 is the universal Korean term for support centers). Status → 서비스 상태 (bare 상태 is ambiguous). eBooks kept as-is. 웹캠 녹화기 → 웹캠 녹화 (기 suffix dropped, consistent with col2).",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / col6-hd",
+          "original": {
+            "text": "COMPANY",
+            "isNote": false
+          },
+          "direct": {
+            "text": "회사",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "회사",
+            "rom": null
+          },
+          "explanation": {
+            "text": "회사 is the natural, exact Korean equivalent for Company. Unlike other columns that retain loanwords, this one has a perfect native Korean word with no register shift.",
+            "tags": [
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              },
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              }
+            ]
+          }
+        },
+        {
+          "badge": {
+            "cls": "s-foot",
+            "text": "Footer",
+            "rowspan": 1
+          },
+          "location": "foot / col6",
+          "original": {
+            "text": "About Us · Diversity, Equity & Inclusion · Careers · Newsroom · Media Kit · vs Vidyard · vs Zoom Clips · vs Microsoft Clipchamp · Sitemap · Privacy Policy",
+            "isNote": false
+          },
+          "direct": {
+            "text": "회사 소개 · 다양성, 형평성 및 포용성 · 채용 · 뉴스룸 · 미디어 킷 · Vidyard 비교 · Zoom Clips 비교 · Microsoft Clipchamp 비교 · 사이트맵 · 개인정보처리방침",
+            "isNote": false
+          },
+          "localization": {
+            "ko": "회사 소개 · 다양성, 형평성 및 포용성 · 채용 · 뉴스룸 · 미디어 킷 · vs Vidyard · vs Zoom Clips · vs Microsoft Clipchamp · 사이트맵 · 개인정보처리방침",
+            "rom": null
+          },
+          "explanation": {
+            "text": "Diversity, Equity & Inclusion → 다양성, 형평성 및 포용성, the standard translation used by Google Korea, Microsoft Korea, and LinkedIn Korea. vs Vidyard format kept, a recognized pattern on Korean SaaS comparison pages. Privacy Policy → 개인정보처리방침, the legally required term under Korea's PIPA (개인정보보호법).",
+            "tags": [
+              {
+                "cls": "e-str",
+                "text": "UI String"
+              },
+              {
+                "cls": "e-cul",
+                "text": "Cultural"
+              },
+              {
+                "cls": "e-lit",
+                "text": "Literal"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "footnote": {
+    "title": "Methodology Notes",
+    "paragraphs": [
+      "<strong>Register:</strong> 해요체 (polite-informal) throughout, the standard for Korean B2B SaaS used by Toss, Notion KR, and Kakao Work. 합쇼체 avoided: it sounds bureaucratic in digital product contexts. Second-person pronouns (당신, 귀사) dropped where context allows. H2 headings use a noun or declarative pattern; ~세요 for body CTAs; ~하기/~보기 for button labels. The gap between Korean that reads correctly and Korean that converts is exactly where these choices live.",
+      "<strong>Key term decisions:</strong> 비동기 → 영상 메시지 (jargon → accessible language). 엔터프라이즈, Jira, SOP, 아웃리치 retained as recognized B2B loanwords. 동영상 → 영상 (shorter, modern Korean). 퍼가기 used in short labels (headings, feature lists); 연동 used in body sentences where the full integration sense is needed.",
+      "<strong>Source &amp; disclaimer:</strong> All EN strings are extracted verbatim from <strong>loom.com</strong> (May 2026). This is independent portfolio work by Dae and is not affiliated with Loom or Atlassian."
+    ],
+    "byline": "Dae · Korean Copywriting &amp; Localization · EN↔KO · B2B SaaS / AI Data"
+  }
+}

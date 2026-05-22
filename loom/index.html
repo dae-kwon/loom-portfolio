@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loom EN→KO Localization · Dae Portfolio</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="description" content="EN→KO localization case study: 79 real Loom.com strings, three layers per entry — translation, localization, and copywriting logic. By Dae, Korean B2B SaaS localizer.">
+<meta property="og:title" content="Loom EN→KO Localization · Dae Portfolio">
+<meta property="og:description" content="79 real Loom.com strings. Translation · Localization · Copywriting logic explained in plain English.">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --ink: #111113; --ink2: #3C3C4E; --ink3: #7A7A90; --ink4: #ADADC0;
+  --surf: #FFFFFF; --surf2: #F5F5F2; --surf3: #ECEAE4;
+  --blue: #1A56FF; --blue-soft: #EEF2FF; --blue-border: #C7D3FF;
+  --green: #16A34A; --green-soft: #F0FDF4; --green-border: #BBF7D0;
+  --amber: #B45309; --amber-soft: #FFFBEB; --amber-border: #FDE68A;
+  --red: #B91C1C; --red-soft: #FFF5F5; --red-border: #FECACA;
+  --purple: #6D28D9; --purple-soft: #F5F3FF; --purple-border: #DDD6FE;
+  --teal: #0E7490; --teal-soft: #ECFEFF; --teal-border: #A5F3FC;
+  --border: rgba(0,0,0,0.07); --border2: rgba(0,0,0,0.12);
+  --ff: 'DM Sans', system-ui, sans-serif;
+  --fm: 'DM Mono', monospace;
+}
+body { font-family: var(--ff); background: var(--surf2); color: var(--ink); line-height: 1.55; font-size: 13px; }
+
+/* ── HEADER ── */
+.hdr { background: #f95d32; padding: 44px 52px 36px; }
+.hdr-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; }
+.hdr-eyebrow { font-size: 10px; color: rgba(255,255,255,.55); letter-spacing: .1em; text-transform: uppercase; }
+.hdr-pill { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.35); color: rgba(255,255,255,.9); font-size: 10px; font-weight: 500; padding: 3px 11px; border-radius: 100px; }
+.hdr h1 { font-size: 28px; font-weight: 500; letter-spacing: -.4px; color: #fff; margin-bottom: 8px; }
+.hdr h1 span { color: rgba(255,255,255,.65); }
+.hdr-desc { font-size: 13px; color: rgba(255,255,255,.7); line-height: 1.7; max-width: 640px; margin-bottom: 24px; }
+.hdr-desc strong { color: rgba(255,255,255,.9); font-weight: 600; }
+.hdr-meta { display: flex; gap: 8px; flex-wrap: wrap; }
+.meta-chip { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.22); color: rgba(255,255,255,.75); font-size: 11px; padding: 3px 11px; border-radius: 100px; }
+.meta-chip strong { color: #fff; font-weight: 600; }
+
+/* ── LEGEND ── */
+.legend { background: var(--surf3); border-bottom: 1px solid var(--border); padding: 12px 52px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.leg-lbl { font-size: 10px; font-weight: 500; color: var(--ink3); text-transform: uppercase; letter-spacing: .08em; margin-right: 8px; }
+.leg { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; color: var(--ink2); padding: 2px 9px; border-radius: 100px; border: 1px solid var(--border2); }
+.leg-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+
+/* ── BODY ── */
+.body { padding: 32px 52px 72px; }
+
+/* Section divider */
+.sec-div { display: flex; align-items: center; gap: 12px; margin: 36px 0 12px; }
+.sec-div:first-child { margin-top: 0; }
+.sec-div-label { font-size: 10px; font-weight: 500; color: var(--ink3); text-transform: uppercase; letter-spacing: .1em; white-space: nowrap; }
+.sec-div-line { flex: 1; height: 1px; background: var(--border); }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; background: var(--surf); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; font-size: 12.5px; margin-bottom: 0; }
+thead th {
+  background: var(--surf3); color: var(--ink3);
+  font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: .08em;
+  padding: 9px 14px; text-align: left; border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+tbody tr { border-bottom: 1px solid var(--border); transition: background .1s; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: #FAFAF8; }
+td { padding: 13px 14px; vertical-align: top; }
+.col-sec { width: 80px; }
+.col-loc { width: 72px; }
+.col-orig { width: 17%; }
+.col-direct { width: 17%; }
+.col-local { width: 18%; }
+.col-exp { width: 30%; }
+
+/* Section badge */
+.sbadge { display: inline-block; font-size: 10px; font-weight: 500; padding: 2px 8px; border-radius: 4px; white-space: nowrap; }
+.s-nav   { background:#EEF2FF; color:#3B5BDB; }
+.s-hero  { background:#FFF7ED; color:#C2410C; }
+.s-soc   { background:var(--green-soft); color:#166534; }
+.s-ai    { background:var(--purple-soft); color:#5B21B6; }
+.s-scr   { background:#FDF4FF; color:#86198F; }
+.s-more  { background:var(--teal-soft); color:#0E7490; }
+.s-safe  { background:#F1F5F9; color:#334155; }
+.s-uc    { background:#FFF7ED; color:#9A3412; }
+.s-feat  { background:var(--blue-soft); color:#1E3A8A; }
+.s-async { background:#FDF2F8; color:#831843; }
+.s-ent   { background:#1E1E2E; color:#A0A0C0; }
+.s-testi { background:#F8F8FF; color:#4338CA; }
+.s-foot  { background:var(--surf3); color:var(--ink2); }
+
+/* Location badge */
+.loc { font-family: var(--fm); font-size: 10px; color: var(--ink4); background: var(--surf2); border: 1px solid var(--border); padding: 1px 6px; border-radius: 3px; display: inline-block; }
+
+/* Text cells */
+.orig { color: var(--ink2); line-height: 1.65; }
+.orig .note { font-size: 11px; color: var(--ink4); font-style: italic; display: block; margin-top: 3px; }
+.direct { color: var(--ink3); font-style: italic; line-height: 1.65; }
+.direct .note { font-size: 11px; color: var(--ink4); font-style: italic; display: block; }
+.local { line-height: 1.6; }
+.local .ko { font-size: 13.5px; color: var(--ink); display: block; margin-bottom: 2px; font-weight: 500; }
+.local .rom { font-size: 10px; color: var(--ink4); display: block; }
+.exp { color: var(--ink2); line-height: 1.75; font-size: 12px; }
+.exp-tags { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 8px; }
+.etag { font-size: 10px; font-weight: 500; padding: 2px 8px; border-radius: 100px; white-space: nowrap; }
+.e-reg  { background:var(--blue-soft);   color:var(--blue); border:1px solid var(--blue-border); }
+.e-cul  { background:var(--amber-soft);  color:var(--amber); border:1px solid var(--amber-border); }
+.e-idi  { background:var(--purple-soft); color:var(--purple); border:1px solid var(--purple-border); }
+.e-lit  { background:var(--green-soft);  color:var(--green); border:1px solid var(--green-border); }
+.e-cta  { background:var(--red-soft);    color:var(--red);   border:1px solid var(--red-border); }
+.e-add  { background:var(--teal-soft);   color:var(--teal);  border:1px solid var(--teal-border); }
+.e-str  { background:var(--surf3);       color:var(--ink2);  border:1px solid var(--border2); }
+
+/* Footnote */
+.footnote { margin-top: 40px; padding: 22px 26px; background: var(--surf); border: 1px solid var(--border); border-radius: 10px; }
+.footnote h3 { font-size: 11px; font-weight: 500; color: var(--ink2); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 9px; }
+.footnote p { font-size: 12px; color: var(--ink3); line-height: 1.8; }
+.footnote p + p { margin-top: 8px; }
+
+/* ── PROFILE CARD ── */
+.profile-card {
+  background: var(--surf); border-bottom: 1px solid var(--border);
+  padding: 20px 52px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+}
+.profile-avatar {
+  width: 48px; height: 48px; border-radius: 50%; background: #f95d32;
+  color: #fff; font-size: 20px; font-weight: 600; display: flex;
+  align-items: center; justify-content: center; flex-shrink: 0;
+  letter-spacing: -.5px; overflow: hidden;
+}
+.profile-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.profile-main { flex: 1; min-width: 200px; }
+.profile-name { font-size: 15px; font-weight: 600; color: var(--ink); letter-spacing: -.2px; }
+.profile-title { font-size: 11.5px; color: var(--ink3); margin-top: 2px; }
+.profile-stats { display: flex; gap: 20px; margin-right: 8px; }
+.p-stat { text-align: center; }
+.p-stat-num { font-size: 18px; font-weight: 700; color: #f95d32; letter-spacing: -.5px; line-height: 1; }
+.p-stat-label { font-size: 10px; color: var(--ink4); margin-top: 3px; white-space: nowrap; }
+.profile-tools { display: flex; gap: 4px; flex-wrap: wrap; max-width: 380px; }
+.p-tool { font-size: 10px; color: var(--ink3); background: var(--surf2); border: 1px solid var(--border2); padding: 2px 7px; border-radius: 3px; font-family: var(--fm); }
+.profile-cta {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #f95d32; color: #fff; font-size: 11.5px; font-weight: 600;
+  padding: 8px 16px; border-radius: 6px; text-decoration: none;
+  white-space: nowrap; transition: opacity .15s; flex-shrink: 0;
+}
+.profile-cta:hover { opacity: .88; }
+.profile-divider { width: 1px; height: 40px; background: var(--border); flex-shrink: 0; }
+
+/* ── STATE: loading / error (data.json 연동용) ── */
+.state { padding: 64px 52px; }
+.state h2 { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 10px; }
+.state p { font-size: 13px; color: var(--ink3); line-height: 1.8; max-width: 620px; }
+.state code { font-family: var(--fm); font-size: 12px; background: var(--surf3); padding: 2px 6px; border-radius: 4px; color: var(--ink2); }
+.state pre { font-family: var(--fm); font-size: 12px; background: var(--ink); color: #E8E8F0; padding: 14px 16px; border-radius: 8px; margin-top: 14px; max-width: 620px; overflow-x: auto; }
+.state.err h2 { color: var(--red); }
+.spinner { width: 22px; height: 22px; border: 2px solid var(--border2); border-top-color: #f95d32; border-radius: 50%; animation: spin .7s linear infinite; margin-bottom: 16px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<!-- 모든 콘텐츠는 data.json 으로부터 런타임에 렌더링됩니다 -->
+<div id="app">
+  <div class="state" id="loading">
+    <div class="spinner"></div>
+    <h2>데이터를 불러오는 중…</h2>
+    <p><code>data.json</code> 에서 로컬라이제이션 테이블을 읽고 있습니다.</p>
+  </div>
+</div>
+
+<script>
+"use strict";
+
+/* ── HTML 이스케이프 (행 데이터는 신뢰할 수 없는 텍스트로 취급) ── */
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({
+  "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+}[c]));
+
+/* ── 데이터 로드: data.json 과 결합되는 지점 ── */
+async function boot() {
+  try {
+    const res = await fetch("data.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status + ": data.json 응답 오류");
+    const data = await res.json();
+    validate(data);
+    render(data);
+  } catch (err) {
+    renderError(err);
+  }
+}
+
+/* ── 최소 스키마 검증: HTML↔JSON 계약 보증 ── */
+function validate(d) {
+  if (!d || typeof d !== "object") throw new Error("data.json 의 최상위가 객체가 아닙니다.");
+  for (const key of ["meta", "legend", "sections", "footnote"]) {
+    if (!(key in d)) throw new Error('data.json 에 필수 키 "' + key + '" 가 없습니다.');
+  }
+  if (!Array.isArray(d.sections)) throw new Error('"sections" 는 배열이어야 합니다.');
+}
+
+/* ── 헤더 ── */
+function renderHeader(m) {
+  const chips = (m.chips || [])
+    .map((c) => `<div class="meta-chip"><strong>${esc(c.label)}</strong> ${esc(c.value)}</div>`)
+    .join("");
+  const copyright = m.copyright
+    ? `<div class="meta-chip" style="background:rgba(255,255,255,0.22);border-color:rgba(255,255,255,0.45);color:#fff;font-weight:500;">${esc(m.copyright)}</div>`
+    : "";
+  return `
+  <div class="hdr">
+    <div class="hdr-top">
+      <div class="hdr-eyebrow">${esc(m.eyebrow)}</div>
+      <div class="hdr-pill">${esc(m.pill)}</div>
+    </div>
+    <h1>${esc(m.headingMain)} <span>${esc(m.headingSub)}</span></h1>
+    <p class="hdr-desc">${m.description || ""}</p>
+    <div class="hdr-meta">${chips}${copyright}</div>
+  </div>`;
+}
+
+/* ── 범례 ── */
+function renderLegend(legend) {
+  const items = (legend || [])
+    .map((l) => `<span class="leg"><span class="leg-dot" style="background:${esc(l.color)}"></span>${esc(l.label)}</span>`)
+    .join("");
+  return `<div class="legend"><span class="leg-lbl">Tag key:</span>${items}</div>`;
+}
+
+/* ── orig / direct 셀: 일반 텍스트 vs note(설명문) ── */
+function cell(payload) {
+  if (!payload) return "";
+  return payload.isNote
+    ? `<span class="note">${esc(payload.text)}</span>`
+    : esc(payload.text);
+}
+
+/* ── 한 행 렌더링 (badge rowspan / badge:null 흡수 처리) ── */
+function renderRow(row) {
+  let badgeTd = "";
+  if (row.badge) {
+    const span = row.badge.rowspan > 1 ? ` rowspan="${row.badge.rowspan}"` : "";
+    badgeTd = `<td${span}><span class="sbadge ${esc(row.badge.cls)}">${esc(row.badge.text)}</span></td>`;
+  }
+  // badge 가 null 이면 직전 행의 rowspan 에 흡수된 행 → td 자체를 생략
+
+  const ko = `<span class="ko">${esc(row.localization.ko)}</span>`;
+  const rom = row.localization.rom
+    ? `<span class="rom">${esc(row.localization.rom)}</span>`
+    : "";
+
+  const tags = (row.explanation.tags || [])
+    .map((t) => `<span class="etag ${esc(t.cls)}">${esc(t.text)}</span>`)
+    .join("");
+  const tagsBlock = tags ? `<div class="exp-tags">${tags}</div>` : "";
+
+  return `
+    <tr>
+      ${badgeTd}
+      <td><span class="loc">${esc(row.location)}</span></td>
+      <td class="orig">${cell(row.original)}</td>
+      <td class="direct">${cell(row.direct)}</td>
+      <td class="local">${ko}${rom}</td>
+      <td class="exp">${esc(row.explanation.text)}${tagsBlock}</td>
+    </tr>`;
+}
+
+/* ── 섹션(구분선 + 테이블) ── */
+function renderSection(sec) {
+  const head = `
+    <thead><tr>
+      <th class="col-sec">Section</th><th class="col-loc">Location</th>
+      <th class="col-orig">Original (EN)</th><th class="col-direct">Direct Translation</th>
+      <th class="col-local">Localization (KO)</th><th class="col-exp">Explanation</th>
+    </tr></thead>`;
+  const rows = (sec.rows || []).map(renderRow).join("");
+  return `
+    <div class="sec-div" id="sec-${esc(sec.id)}">
+      <div class="sec-div-label">${esc(sec.label)}</div>
+      <div class="sec-div-line"></div>
+    </div>
+    <table>${head}<tbody>${rows}</tbody></table>`;
+}
+
+/* ── 푸트노트 ── */
+function renderFootnote(fn) {
+  const paras = (fn.paragraphs || []).map((p) => `<p>${p}</p>`).join("");
+  const byline = fn.byline
+    ? `<p style="margin-top:8px;font-size:11px;color:var(--ink4)">${esc(fn.byline)}</p>`
+    : "";
+  return `
+    <div class="footnote">
+      <h3>${esc(fn.title)}</h3>
+      ${paras}${byline}
+    </div>`;
+}
+
+/* ── 프로필 카드 ── */
+function renderProfile() {
+  const tools = ["memoQ","Trados Studio","Smartcat","Phrase","Lokalise","Crowdin","POEditor","XLIFF","Claude","ChatGPT","HubSpot","Notion","Airtable","Canva","YouTube Studio"];
+  const toolChips = tools.map(t => `<span class="p-tool">${esc(t)}</span>`).join("");
+  return `
+  <div class="profile-card">
+    <div class="profile-avatar">
+      <img src="/loom/profile.jpg" alt="Dae" onerror="this.parentElement.innerHTML='D'">
+    </div>
+    <div class="profile-main">
+      <div class="profile-name">Dae</div>
+      <div class="profile-title">Korean Copywriting · Localization · LQA &nbsp;·&nbsp; EN↔KO &nbsp;·&nbsp; B2B SaaS / AI Data</div>
+    </div>
+    <div class="profile-divider"></div>
+    <div class="profile-stats">
+      <div class="p-stat"><div class="p-stat-num">20M+</div><div class="p-stat-label">Views · 2 months</div></div>
+      <div class="p-stat"><div class="p-stat-num">12K</div><div class="p-stat-label">Subscribers · 2 months</div></div>
+    </div>
+    <div class="profile-divider"></div>
+    <div class="profile-tools">${toolChips}</div>
+    <div class="profile-divider"></div>
+    <a class="profile-cta" href="https://www.upwork.com/freelancers/daekwon" target="_blank" rel="noopener">
+      Upwork Profile ↗
+    </a>
+  </div>`;
+}
+
+/* ── 전체 조립 ── */
+function render(data) {
+  const sections = data.sections.map(renderSection).join("");
+  document.getElementById("app").innerHTML =
+    renderHeader(data.meta) +
+    renderProfile() +
+    renderLegend(data.legend) +
+    `<div class="body">${sections}${renderFootnote(data.footnote)}</div>`;
+  document.title = (data.meta.headingMain || "Localization") + " · Dae Portfolio";
+}
+
+/* ── 오류 화면: file:// 직접 열람 시 CORS 안내 포함 ── */
+function renderError(err) {
+  const isFileProto = location.protocol === "file:";
+  const hint = isFileProto
+    ? `<p>지금 이 파일을 <code>file://</code> 로 직접 열었습니다. 브라우저 보안 정책상
+       <code>fetch()</code> 로 로컬 <code>data.json</code> 을 읽을 수 없습니다.
+       아래처럼 같은 폴더에서 간단한 로컬 서버를 띄운 뒤 접속하세요:</p>
+       <pre>cd "이 파일이 있는 폴더"
+python3 -m http.server 8000
+# 브라우저에서  http://localhost:8000  접속</pre>`
+    : `<p><code>index.html</code> 과 <code>data.json</code> 이
+       <strong>같은 폴더</strong>에 있는지 확인하세요.</p>`;
+  document.getElementById("app").innerHTML = `
+    <div class="state err">
+      <h2>데이터를 불러오지 못했습니다</h2>
+      <p>${esc(err.message)}</p>
+      ${hint}
+    </div>`;
+}
+
+boot();
+</script>
+</body>
+</html>
